@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto Flex", sans-serif;
   display: block;
-  background-color: #f9f7fd;
+  background-color: #acc6aa;
   margin: 20px;
 }
 .container {
@@ -11,4 +11,18 @@ body {
   padding: 30px;
   max-width: fit-content;
   margin: 50px auto;
+}
+.search-city-input {
+  background-color: rgba(113, 160, 165, 0.2);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 80%;
+}
+.search-submit-input {
+  background-color: #77628c;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  padding: 10px 30px;
 }
