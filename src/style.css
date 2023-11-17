@@ -1,0 +1,14 @@
+body {
+  font-family: "Roboto Flex", sans-serif;
+  display: block;
+  background-color: #f9f7fd;
+  margin: 20px;
+}
+.container {
+  background-color: white;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: fit-content;
+  margin: 50px auto;
+}
