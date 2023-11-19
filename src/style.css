@@ -43,9 +43,27 @@ h1 {
 strong {
   color: #acc6aa;
 }
-h2 {
-  font-size: 80px;
+
+.temperature-data {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 0 0 40px;
 }
+h2 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+h3 {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+}
+.temperature-data span {
+  margin-top: 6px;
+  font-size: 28px;
+}
+
 a {
   color: #77628c;
 }
