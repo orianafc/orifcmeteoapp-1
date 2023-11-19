@@ -12,6 +12,10 @@ body {
   max-width: fit-content;
   margin: 50px auto;
 }
+header {
+  border-bottom: 1px solid #acc6aa;
+  padding: 0 0 30px 0;
+}
 .search-city-input {
   background-color: rgba(113, 160, 165, 0.2);
   border: none;
@@ -25,4 +29,8 @@ body {
   color: white;
   border: none;
   padding: 10px 30px;
+}
+footer {
+  border-top: 1px solid #acc6aa;
+  padding: 0 0 30px 0;
 }
