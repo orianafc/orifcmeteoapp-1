@@ -3,6 +3,7 @@ body {
   display: block;
   background-color: #acc6aa;
   margin: 20px;
+  color: #757575;
 }
 .container {
   background-color: white;
@@ -61,7 +62,7 @@ h3 {
 }
 .temperature-data span {
   margin-top: 6px;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 a {
