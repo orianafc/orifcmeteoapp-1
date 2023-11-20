@@ -20,12 +20,12 @@
   <body>
     <div class="container">
       <header>
-        <form>
+        <form class="search-form" id="search-form">
           <input
             class="search-city-input"
             type="text"
             name="City"
-            id=""
+            id="search-city-input"
             placeholder="Enter a city..."
             autocomplete="on"
             autofocus="on"
@@ -36,7 +36,7 @@
       <main>
         <div class="row">
           <div class="col">
-            <h1 class="weather-city">Roma</h1>
+            <h1 class="weather-city" id="weather-city">Roma</h1>
             <div class="weather-details">
               <p>Tuesday 10:48, cloudy</p>
               <p>
@@ -78,5 +78,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
