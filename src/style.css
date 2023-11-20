@@ -57,7 +57,7 @@ header {
 }
 .weather-temperature {
   font-size: 80px;
-  line-height: 88px;
+  line-height: 80px;
   font-weight: bold;
 }
 .weather-unit {
