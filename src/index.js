@@ -18,3 +18,6 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+let apiKey = "02ab91betd0a6efa2b010d3034deffo4";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
