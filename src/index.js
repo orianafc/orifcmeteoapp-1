@@ -1,23 +1,20 @@
-function capitalizeEachWord(string) {
-  return string
-    .split(" ")
-    .map((word) => word[0].toUpperCase() + word.slice(1))
-    .join(" ");
+function refreshWeather(response) {
+  let temperatureElement = document.querySelector("#weather-temperature");
+  let temperature = response.data.temperature.current;
+  temperatureElement.innerHTML = Math.round(temperature);
+  let cityElement = document.querySelector("#weather-city");
+  cityElement.innerHTML = response.data.city;
 }
-
+function searchCity(city) {
+  let apiKey = "02ab91betd0a6efa2b010d3034deffo4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(refreshWeather);
+}
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-city-input");
-  let weatherCity = document.querySelector("#weather-city");
-  weatherCity.innerHTML = searchInput.value;
-  if (searchInput.value) {
-    let inputCityCapitalize = capitalizeEachWord(searchInput.value);
-    weatherCity.innerHTML = inputCityCapitalize;
-  }
+  searchCity(searchInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
-
-let apiKey = "02ab91betd0a6efa2b010d3034deffo4";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
