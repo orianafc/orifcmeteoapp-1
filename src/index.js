@@ -1,6 +1,9 @@
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#weather-temperature");
   let temperature = response.data.temperature.current;
+  let unitElement = document.querySelector("#weather-unit");
+  unitElement.innerHTML = "ºC";
+
   temperatureElement.innerHTML = Math.round(temperature);
   let cityElement = document.querySelector("#weather-city");
   cityElement.innerHTML = response.data.city;
